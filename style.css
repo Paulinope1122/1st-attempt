@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    background-color: #f5f1f1;
+    background-position: center;
+    font-family: 'Epilogue', sans-serif;
+}
+
+
+.toogle{
+    display:flex;
+    padding-top:2rem ;
+
+}
+.toogle:hover .modal{
+    display:block;
+}
+img.tg{
+    margin-left: 4rem;
+}
+img.tg-omori{
+    margin-left: 20rem;
+}
+
+nav{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.mobile-nav{
+    display: none;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background: white;
+    width: 80%;
+    height: 100vh;
+    
+}
+.mobile-nav ul{
+    display: grid;
+    grid-template-rows: 10% 10% 10% 10%;
+    grid-gap: 1rem;
+    margin-left: -5rem;
+    padding-top: 2rem;
+}
+.profane .pfn{
+    margin: 0;
+    padding: 0;
+}
+.profane{
+    position: absolute;
+    top: 15rem;
+}
+.backdrop{
+    display: none;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 100;
+    width: 100vh;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+@media(min-width: 40rem ){
+    nav{
+        display: grid;
+        grid-template-columns: 10% 60% 30% 50%;
+    }
+    .login-page{
+     padding-top: 0.7rem;
+    }
+    .toogle{
+        display: none;
+    }
+    /* .register-box a{
+        border:2px solid #bbbaba;
+        padding:16px; 
+        border-radius:8px;
+        padding-top: 0;
+        top: 1rem;
+        width: 12rem;
+        text-align: center;
+    } */
+    li.register-box{
+        margin-right:1rem; 
+        padding: 0;
+    }
+    
+}
+.logo{
+    padding-top:0.8rem;
+    font-size: 2rem;
+    font-weight:bold;
+    padding-left: 2.5rem;
+}
+
+ul{
+    display: flex;
+    margin-left: 15px;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+}
+ul li{
+    margin: 25px;
+    list-style: none;
+    margin-left: 6rem;
+    padding: 0;
+
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #686565;
+}
+
+.register-box a{
+    border:2px solid #bbbaba;
+    padding:20px;
+    border-radius:8px;
+    padding-top: 1rem;
+    top: 1rem;
+    margin: 9rem 2rem;
+}
+
+
+.register-box:hover{
+    border-color: #686565;
+}
+
+.login{
+    position: absolute;
+    margin: 0px 10rem;
+    padding: 0;
+    top: -10px;
+}
+
+
+.main-nav .fa-solid, 
+.mobile-nav .fa-solid{
+    margin-right: 16px;
+}
+
+.list-style{
+    display: none;
+    padding:0;
+    margin: 0;
+    align-items: center;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+.main-nav ul li:hover .list-style, 
+.mobile-nav ul li:hover .list-style {
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -20px;
+}
+
+.main-nav ul li:hover .list-style ul,
+.mobile-nav ul li:hover .list-style ul{
+    display: block;
+    margin:10px;
+}
+.main-nav ul li:hover .list-style ul li,
+.mobile-nav ul li:hover .list-style ul li{
+    width: 150px;
+    padding: 1px;
+    background: transparent;
+}
+.body-page{
+    text-align: center;
+    padding-top: 30rem;
+    margin: 4rem 7rem;
+}
+.close-icon{
+    float: right;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    cursor: pointer;
+}
+
+.menu-bar{
+    font-weight: bold;
+    font-size: 24px;
+    padding: 1rem;
+    width:90%;
+}
+.menu-bar-1{
+    line-height: 1.5;
+    color: #8d8c8c;
+    display: flex;
+    width: 100%;
+}
+button{
+    padding: 16px;
+    border-radius: 8px;
+    background: black;
+    color: white;
+    margin: 2rem 4rem ;
+
+}
+button:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+.downpanel{
+    display: grid;
+    grid-gap: 4rem;
+    grid-template-columns: 25% 15% 15% 15% ;
+    margin: 0rem 5rem;
+}
+@media (min-width:40rem){
+    .body-page{
+        padding-top: 9rem;
+        margin: 2rem;
+    }
+    .downpanel{
+        display: grid;
+        grid-gap: 4rem;
+        grid-template-columns: 10% 10% 10% 10% ;
+        margin: 7rem 7rem;
+    }
+
+    .menu-bar{
+        font-weight: bold;
+        font-size: 70px;
+        padding: 1rem;
+        width:60%;
+    }
+    .menu-bar-1{
+        font-size: 20px;
+        line-height: 1.5;
+        color: #8d8c8c;
+        width: 40%;
+        margin-left: 4.4rem;
+    }
+    button{
+        padding: 16px;
+        border-radius: 8px;
+        background: black;
+        color: white;
+        margin-left: -60rem;
+    }
+    ul li{
+        margin: 0px;
+        list-style: none;
+        margin-left: 6rem;
+        padding: 0;
+    }
+    
+   
+}
+
+.fave img{
+    position: absolute;
+    top: 5rem;
+    left: 40px;
+    width: 500px;
+    height: 500px;
+ }
+
+ @media(min-width:40rem){
+    .fave{
+        display: flex;
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        left: 750px;
+        top: 9rem;
+     }
+     
+ }
+ 
